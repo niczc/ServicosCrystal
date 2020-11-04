@@ -1,8 +1,15 @@
-Thank you for using our template!
+git init - inicializa o git
+git status - status do que foi modificado, para enviar
+git add . - adiciona tudo que estiver no status
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
+git commit -m 'First commit' - comita qualquer artuivo, muda o que tem nas ""
+caso dê erro, configurar com o acesso.
 
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
+git config --global user.email "you@example.com"
 
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+git config --global user.name "Your Name"
+
+OBS.: CASO DE ERRO EXECUTAR NO TERMINAL
+git remote add origin git@github.com:github.com/niczc/ServicosCrystal.git
+git push -u origin main
+
