@@ -21,17 +21,17 @@ $mail = new PHPMailer();
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
-	$mail->Username = '@gmail.com';  //insere aqui o email da empresa
-	$mail->Password = '1234'; // a senha do email
+	$mail->Username = 'crystalclearservicos@gmail.com';  //insere aqui o email da empresa
+	$mail->Password = '@senha123'; // a senha do email
 	$mail->Port = 587;
 
-	$mail->setFrom('@gmail.com');  //insere aqui o email novamente, pois é atraves dessa linha que ele enviará o email
-	$mail->addAddress('@gmail.com'); //aqui é onde ele recebe  o destinatario (o da propria empresa, ja que ela vai receber) e caso seja mais de um, basta acrecentar mais linhas dessa
+	$mail->setFrom('crystalclearservicos@gmail.com');  //insere aqui o email novamente, pois é atraves dessa linha que ele enviará o email
+	$mail->addAddress('crystalclearservicos@gmail.com'); //aqui é onde ele recebe  o destinatario (o da propria empresa, ja que ela vai receber) e caso seja mais de um, basta acrecentar mais linhas dessa
 
 
 	//as 3 linhas abaixo é onde vc pode modificar o texto do email e onde ele receberá os parametros do formulario
 	$mail->isHTML(true);
-	$mail->Subject = 'Teste de email via gmail Serviços Crystal';
+	$mail->Subject = 'Orçamento através do site da Serviços Crystal';
 	$mail->Body = "Nome: {$nome}<br>
 					  Email: {$email}<br>
 					  Mensagem: {$mensagem}<br>"
